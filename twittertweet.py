@@ -17,4 +17,4 @@ def send_tweet():
 	return render_template('tweet.html', tweet_text=tweet_text)
 
 if __name__=='__main__':
-	app.run(debug=True, port=7099)
+	app.run(debug=True, port=7090)
