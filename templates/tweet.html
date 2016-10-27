@@ -1,59 +1,45 @@
 <html>
     <head>
       <title>Tectonic Tweets</title>
+   
+      <!-- Google Fonts -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 
-      <!-- Latest compiled and minified CSS --> 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+      <!-- CSS Reset -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
 
-      <!-- Latest compiled and minified JavaScript -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-      </script> 
-      
-      <!-- 
-      <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css" -->
+      <!-- Milligram CSS minified -->
+      <link rel="stylesheet" href="../static/milligram/dist/milligram.min.css">
 
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <link rel="icon" 
-      type="image/png" 
-      href="../static/mylogo.png">
+      <link type="image/png" rel="icon" href="../static/logos/twitterlogo.png">
       
-      <style>
-        html {
-        font-family: "Sans Serif";
-        background: white;
-        }
+     <style>
         body {
-          backgound: lightgrey;
-          max-width: 900px;
-          margin: 0 auto;
-        }
-        #header {
-          padding-top: 5;
-          background: lightsteelblue;
-        }
-        #main {
-          background: lightsteelblue;
+          max-width:700px;
+          margin:0 auto;
+          color:#4099ff;
         }
         #tweet {
-          padding-top: 10;
-          padding-left: 10;
-          padding-right: 10;
-          padding-bottom: 10;
+          padding-top:10;
+          padding-left:10;
+          padding-right:10;
+          padding-bottom:10;
         }
       </style>
 
     </head>
     <body>
-    <div id="header">
+    <div id="header"><hr /><p></p>
       <h1>Tectonic Tweets</h1>
-      <hr />
     </div>
     <div id="main">
       <div id="tweet">
         <form action="/tweet" method="POST">
           <input type="text" name="tweet" size="70" maxlength="140">
           <input type="submit" value="Tweet">
+          <hr />
         </form>
       </div>
     </div>
